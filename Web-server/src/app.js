@@ -11,6 +11,7 @@ const forecast = require('./utils/forecast')
 // console.log(path.join(__dirname, '../public')) // Return the final path
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // Define path for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -129,7 +130,7 @@ app.get('*', (req, res) => {
   })
 })
 
-
-app.listen(3000, () => {
-  console.log('Server is up on port 3000.')
+// This is a stativ value use in a computer
+app.listen(port, () => {
+  console.log('Server is up on port ' + port)
 })
