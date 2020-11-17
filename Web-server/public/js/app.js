@@ -17,7 +17,6 @@ const messageOne = document.querySelector('#message1')
 const messageTwo = document.querySelector('#message2')
 
 // messageOne.textContent = 'From JavaScript'
-
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault()
   const location = search.value
